@@ -45,25 +45,11 @@
       }
   }
   
-  @media only screen and (max-device-width: 900px) and (orientation: landscape) {
-    .phone, .message {
-      display: block;
-    }
-    .parent-container {
-      display: none;
-    }
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background-color:#0e2736
-    }
-  }
+
   
   
       
-  @media only screen and (max-device-width: 850px) and (max-device-height: 500px) and (orientation: landscape) {
+  @media only screen and (max-device-width: 950px) and (max-device-height: 500px) and (orientation: landscape) {
     .phone, .message {
       display: block;
     }
@@ -122,7 +108,7 @@
   
   
   
-  @media only screen and (min-device-width: 900px){
+  @media only screen and (min-device-width: 951px){
     .messagepc {
       display: block;
       background-color:#0e2736;
