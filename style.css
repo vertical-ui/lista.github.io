@@ -6,176 +6,188 @@
   
 
 
-  * {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
-
-
-.phone {
-  height: 50px;
-  width: 100px;
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 10px;
-  animation: rotate1 1.5s ease-in-out infinite alternate;
-  display: none;
-  z-index: 10;
-  /* display: none; */
-}
-
-.message {
-  color: rgb(255, 255, 255);
-  font-size: 1em;
-  margin-top: 40px;
-  display: none;
-  z-index: 10;
-  /* display: none; */
-}
-
-@keyframes rotate1 {
-  0% {
-		transform: rotate(0deg)
-	}
-	50% {
-		transform: rotate(-90deg)
-	}
-	100% {
-		transform: rotate(-90deg)
-	}
-}
-
-@media only screen and (max-device-width: 850px) and (max-device-height: 500px) and (orientation: landscape) {
-  .phone, .message {
-    display: block;
+    * {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  .parent-container{
-    display: none;
-  }
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color:#0e2736
-  }
-}
-
-
-
-.phone2 {
-  position: relative;
-
-  height: 200px;
-  width: 100px;
-  border: 5px solid rgb(255, 255, 255);
-  border-radius: 10px;
-  display: none;
-  z-index: 10;
-  /* display: none; */
-}
-
-
-
-
-.messagepc{
-  display: none;
-  z-index: 15;
   
-  /* display: none; */
-}
-
-
-
-
-
-
-
-
-.messagepc p{
-  position: relative;
-  transform: translateY(-50%);
-  font-size: 25px;
-  color: white;
-  font-family: Poppins-Bold;
-  margin-top: 50px;
-}
-
-
-
-
-@media only screen and (min-device-width: 900px){
-  .messagepc {
-    display: block;
-    background-color:#0e2736;
-    width: 100%;
-    height:100vh;
-    margin-top: 0;
-    text-align: center;
-    justify-content: center;
-    
+ 
+  .phone {
+    height: 50px;
+    width: 100px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    animation: rotate1 1.5s ease-in-out infinite alternate;
+    display: none;
+    z-index: 10;
+    /* display: none; */
   }
-  .parent-container{
-    display: none
-  };
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color:#224f6b
+  
+  .message {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    margin-top: 40px;
+    display: none;
+    z-index: 10;
+    /* display: none; */
   }
+  
+  @keyframes rotate1 {
+    0% {
+          transform: rotate(0deg)
+      }
+      50% {
+          transform: rotate(-90deg)
+      }
+      100% {
+          transform: rotate(-90deg)
+      }
+  }
+  
+  @media only screen and (max-device-width: 900px) and (orientation: landscape) {
+    .phone, .message {
+      display: block;
+    }
+    .parent-container {
+      display: none;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color:#0e2736
+    }
+  }
+  
+  
+      
+  @media only screen and (max-device-width: 850px) and (max-device-height: 500px) and (orientation: landscape) {
+    .phone, .message {
+      display: block;
+    }
+    .parent-container{
+      display: none;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color:#0e2736
+    }
+  }
+  
+  
+  
   .phone2 {
-    display:block;
-    display: table;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20%;
+    position: relative;
+  
+    height: 200px;
+    width: 100px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    display: none;
+    z-index: 10;
+    /* display: none; */
   }
-
-}
-
-
-@media only screen and (min-device-height: 1000px){
-  .messagepc {
-    display: block;
-    background-color:#0e2736;
-    width: 100%;
-    height:100vh;
-    margin-top: 0;
-    text-align: center;
-    justify-content: center;
+  
+  
+  
+  
+  .messagepc{
+    display: none;
+    z-index: 15;
     
+    /* display: none; */
   }
-  .parent-container{
-    display: none
-  };
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color:#224f6b
+  
+  
+  
+  
+  
+  
+  
+  
+  .messagepc p{
+    position: relative;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: white;
+    font-family: Poppins-Bold;
+    margin-top: 50px;
   }
-  .phone2 {
-    display:block;
-    display: table;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20%;
+  
+  
+  
+  
+  @media only screen and (min-device-width: 900px){
+    .messagepc {
+      display: block;
+      background-color:#0e2736;
+      width: 100%;
+      height:100vh;
+      margin-top: 0;
+      text-align: center;
+      justify-content: center;
+      
+    }
+    .parent-container{
+      display: none
+    };
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color:#224f6b
+    }
+    .phone2 {
+      display:block;
+      display: table;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 20%;
+    }
+  
   }
-
-}
-
-
-
-
-
-
-
-
+  
+  
+  @media only screen and (min-device-height: 1000px){
+    .messagepc {
+      display: block;
+      background-color:#0e2736;
+      width: 100%;
+      height:100vh;
+      margin-top: 0;
+      text-align: center;
+      justify-content: center;
+      
+    }
+    .parent-container{
+      display: none
+    };
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color:#224f6b
+    }
+    .phone2 {
+      display:block;
+      display: table;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 20%;
+    }
+  
+  }
+  
+  
+  
+  
 
 
 body {
