@@ -12,6 +12,13 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+    * {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+ 
   .phone {
     height: 50px;
     width: 100px;
@@ -34,17 +41,17 @@
   
   @keyframes rotate1 {
     0% {
-      transform: rotate(0deg)
-    }
-    50% {
-      transform: rotate(-90deg)
-    }
-    100% {
-      transform: rotate(-90deg)
-    }
+          transform: rotate(0deg)
+      }
+      50% {
+          transform: rotate(-90deg)
+      }
+      100% {
+          transform: rotate(-90deg)
+      }
   }
   
-  @media only screen and (max-device-width: 850px) and (orientation: landscape) {
+  @media only screen and (max-device-width: 900px) and (orientation: landscape) {
     .phone, .message {
       display: block;
     }
@@ -61,6 +68,7 @@
   }
   
   
+      
   @media only screen and (max-device-width: 850px) and (max-device-height: 500px) and (orientation: landscape) {
     .phone, .message {
       display: block;
@@ -182,6 +190,9 @@
     }
   
   }
+  
+  
+  
   
   
   
