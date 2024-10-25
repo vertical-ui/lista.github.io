@@ -479,3 +479,10 @@ footer small{
   margin: 5px;
   color:white
 }
+
+
+iframe{
+  margin: 20px;
+  width: 90%;
+  height:70vh;
+}
